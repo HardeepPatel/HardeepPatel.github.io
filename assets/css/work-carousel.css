@@ -1,0 +1,447 @@
+/* Compact artwork and fixed narrow rails, centered with equal outside margins. */
+section.business-progress {
+  --progress-inset: max(48px, calc((100vw - 1600px) / 2));
+  --progress-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 88px var(--progress-inset) 80px;
+  overflow: hidden;
+  background: #111;
+}
+.business-progress-heading {
+  margin: 0 0 64px;
+}
+section.business-progress .business-progress-heading h2 {
+  margin: 0;
+  max-width: none;
+  color: #f1f1f1;
+  font-family: "Progress Favorit", Arial, sans-serif;
+  font-size: clamp(34px, 3.2vw, 48px);
+  font-weight: 300;
+  font-feature-settings:
+    "ss04" on,
+    "ss05" on;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+.progress-viewport {
+  width: 100%;
+  container-type: inline-size;
+}
+.progress-track {
+  --progress-count: 3;
+  --progress-rail: 64px;
+  --progress-artwork: min(
+    560px,
+    calc(100cqi - var(--progress-count) * var(--progress-rail) - 20px)
+  );
+  --progress-expanded: calc(
+    var(--progress-artwork) + var(--progress-rail) + 20px
+  );
+  --progress-height: max(560px, calc(var(--progress-artwork) + 36px));
+  display: flex;
+  width: calc(
+    var(--progress-expanded) + (var(--progress-count) - 1) *
+      var(--progress-rail)
+  );
+  max-width: 100%;
+  height: var(--progress-height);
+  gap: 0;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.progress-slide {
+  position: relative;
+  flex: 0 0 var(--progress-rail);
+  min-width: 0;
+  overflow: hidden;
+  border-right: 1px solid rgb(255 255 255 / 24%);
+  transition: flex-basis 650ms var(--progress-ease);
+}
+.progress-slide.is-active {
+  flex-basis: var(--progress-expanded);
+}
+.progress-slide:last-child {
+  border-right: 0;
+}
+.progress-rail {
+  position: absolute;
+  z-index: 2;
+  inset: 0 auto 0 0;
+  width: var(--progress-rail);
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgb(241 241 241 / 30%);
+  cursor: pointer;
+  text-align: left;
+  transition: color 300ms ease;
+}
+.progress-slide.is-active .progress-rail,
+.progress-rail:hover {
+  color: #f1f1f1;
+}
+.progress-rail-title {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: calc(var(--progress-height) - 48px);
+  margin: 0;
+  font-family: "Progress Favorit", Arial, sans-serif;
+  font-size: clamp(22px, 1.6vw, 24px);
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: 0 50%;
+}
+.progress-card {
+  position: absolute;
+  inset: 18px auto 18px var(--progress-rail);
+  display: block;
+  width: calc(var(--progress-expanded) - var(--progress-rail) - 20px);
+  overflow: hidden;
+  border-radius: 12px;
+  color: #f1f1f1;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 300ms ease,
+    visibility 0s 650ms;
+  -webkit-user-drag: none;
+}
+.progress-slide.is-active .progress-card {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 500ms 100ms ease,
+    visibility 0s;
+}
+.progress-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.progress-slide:first-child .progress-card-image,
+.progress-slide:nth-child(2) .progress-card-image {
+  object-position: center;
+  object-fit: contain;
+}
+.progress-slide-blog .progress-card-image {
+  object-fit: cover;
+  object-position: center;
+  background: #f5f5f3;
+}
+.progress-slide-private-equity .progress-card {
+  background: #080808;
+}
+.progress-slide-private-equity .progress-card-image {
+  filter: grayscale(1) brightness(0.55);
+}
+.progress-slide-private-equity .progress-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.9));
+}
+.progress-pe-brand {
+  position: absolute;
+  z-index: 1;
+  right: 28px;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.progress-pe-brand img {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+.progress-pe-brand span {
+  color: #fff;
+  font-family: "Progress Favorit", Arial, sans-serif;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+}
+.progress-slide-private-equity .progress-card-heading,
+.progress-slide-private-equity .progress-card-metric {
+  z-index: 1;
+}
+.progress-blog-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max-content;
+  max-width: 78%;
+  transform: translate(-50%, -50%);
+  color: #151716;
+  text-align: center;
+  font-family: "Progress Favorit", Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+}
+.progress-live-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #fbfbfa;
+  pointer-events: none;
+}
+.progress-live-art .blog-article-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+}
+.progress-live-art .if-stage {
+  --if-stage-scale: calc(100cqw / 1400px);
+  width: 1400px;
+  height: 1400px;
+  left: 0;
+  top: 0;
+}
+.progress-live-art .if-product {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: auto;
+}
+.progress-slide-blog .progress-card-heading {
+  color: #111;
+}
+.progress-slide-blog .progress-rail-title {
+  white-space: normal;
+  font-size: 21px;
+  line-height: 24px;
+}
+.progress-card-heading {
+  position: absolute;
+  inset: 24px 24px auto auto;
+}
+.progress-card-metric {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  right: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+.progress-card-metric-value {
+  font-family: "Progress Favorit", Arial, sans-serif;
+  font-size: clamp(44px, 5vw, 76px);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+.progress-card-metric-label {
+  max-width: 260px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(14px, 1.35vw, 20px);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 640px) {
+  .progress-card-metric {
+    top: 22px;
+    left: 20px;
+    right: 58px;
+    gap: 7px;
+  }
+}
+/* The full title lives on the rail; avoid repeating it over the artwork. */
+section.business-progress .progress-card-heading h3 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.progress-card-heading svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+  filter: drop-shadow(0 1px 5px rgb(0 0 0 / 35%));
+}
+.progress-card-logo {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: auto;
+  max-width: 60%;
+  height: 38px;
+  object-fit: contain;
+}
+.progress-card-logo-0 {
+  height: 56px;
+}
+.progress-card-logo-3 {
+  height: 29px;
+}
+.progress-card-logo-6 {
+  height: 34px;
+}
+.progress-card:focus-visible,
+.progress-rail:focus-visible {
+  outline: 2px solid #f1f1f1;
+  outline-offset: -3px;
+}
+@media (max-width: 959.98px) {
+  section.business-progress {
+    --progress-inset: 24px;
+  }
+  .progress-track {
+    --progress-rail: 56px;
+  }
+  .progress-rail-title {
+    font-size: 23px;
+  }
+}
+@media (max-width: 959.98px) {
+  section.business-progress {
+    padding: 56px 24px;
+  }
+  .business-progress-heading {
+    margin-bottom: 32px;
+  }
+  .progress-track {
+    --progress-rail: 68px;
+    --progress-expanded: 448px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .progress-slide {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid rgb(255 255 255 / 24%);
+  }
+  .progress-slide:last-child {
+    border-bottom: 0;
+  }
+  .progress-rail {
+    inset: 0 0 auto;
+    width: 100%;
+    height: var(--progress-rail);
+  }
+  .progress-rail-title {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 12px 8px;
+    font-size: 19px;
+    line-height: 1.2;
+    white-space: normal;
+    transform: none;
+  }
+  .progress-slide-blog .progress-rail-title {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+  .progress-card {
+    inset: var(--progress-rail) 8px auto;
+    width: calc(100% - 16px);
+    height: calc(var(--progress-expanded) - var(--progress-rail) - 16px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .progress-slide,
+  .progress-rail,
+  .progress-card,
+  .progress-slide.is-active .progress-card {
+    transition: none;
+  }
+}
+
+/* Personal content, original homepage carousel mechanics. */
+body[data-industry] #industry-page section.portfolio-carousel {
+  padding: 88px max(48px, calc((100vw - 1600px) / 2)) 80px;
+  background: #111;
+  margin-top: 100px;
+}
+.portfolio-carousel .progress-card-image {
+  object-fit: cover !important;
+  filter: saturate(0.65) brightness(0.75);
+}
+.portfolio-carousel .progress-slide:nth-child(3) .progress-card-image {
+  object-fit: contain !important;
+  background: #6b402e;
+}
+.portfolio-carousel .progress-slide:nth-child(4) .progress-card-image {
+  object-fit: contain !important;
+  background: #020a16;
+}
+.portfolio-carousel .progress-card:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, #0005, transparent 40%, #0009);
+}
+.portfolio-carousel .progress-card-metric {
+  z-index: 1;
+}
+.work-card-caption {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  z-index: 1;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  font-size: 25px;
+  line-height: 1.15;
+}
+.work-card-caption > span {
+  font-size: 28px;
+}
+.portfolio-carousel .progress-rail-title {
+  color: inherit;
+}
+.portfolio-carousel .progress-card-metric-value {
+  font-size: clamp(42px, 4.5vw, 68px);
+}
+.portfolio-carousel .progress-card-metric-label {
+  font-size: 17px;
+}
+.portfolio-carousel .business-progress-heading h2 {
+  color: #f1f1f1 !important;
+  font-size: clamp(34px, 3.2vw, 48px) !important;
+}
+@media (max-width: 959px) {
+  body[data-industry] #industry-page section.portfolio-carousel {
+    padding: 56px 24px;
+    margin-top: 40px;
+  }
+  .work-card-caption {
+    font-size: 23px;
+  }
+  .portfolio-carousel .progress-track {
+    --progress-expanded: 440px;
+  }
+  .portfolio-carousel .progress-rail-title {
+    font-size: 20px;
+  }
+}

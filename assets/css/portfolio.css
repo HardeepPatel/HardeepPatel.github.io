@@ -1,0 +1,887 @@
+/* Portfolio content inside the original banking page layout. */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+[hidden] {
+  display: none !important;
+}
+.nav-shell .brand {
+  font-family: Inter, Arial, sans-serif !important;
+}
+.nav-shell .nav-left,
+.nav-shell .nav-right {
+  font-family: Inter, Arial, sans-serif;
+}
+.site-header {
+  left: 0;
+  right: 0;
+}
+.nav-shell {
+  width: min(100%, 860px);
+}
+.nav-shell .brand {
+  white-space: nowrap;
+}
+.nav-shell a {
+  white-space: nowrap;
+}
+.hero-resume {
+  display: inline-flex;
+  gap: 14px;
+  margin-top: 22px;
+  font-size: 15px;
+  border-bottom: 1px solid #ffffff80;
+  padding-bottom: 4px;
+}
+.financial-live-hero .reference-hero-image {
+  filter: saturate(0.7) contrast(0.98) brightness(0.83) blur(2px);
+  transform: scale(1.02);
+}
+.portfolio-window {
+  background: #fafaf9;
+  text-align: left;
+  color: #222;
+  height: 650px !important;
+  display: flex;
+  flex-direction: column;
+}
+.window-bar {
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 16px;
+  background: #efefed;
+  border-bottom: 1px solid #d7d7d2;
+  font-size: 11px;
+  color: #777;
+}
+.window-bar > div {
+  display: flex;
+  gap: 7px;
+}
+.window-bar i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff6159;
+}
+.window-bar i:nth-child(2) {
+  background: #ffbc2e;
+}
+.window-bar i:nth-child(3) {
+  background: #28c841;
+}
+.window-bar > a {
+  margin-left: auto;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  flex: 1;
+  min-height: 0;
+}
+.workspace-sidebar {
+  padding: 28px 24px;
+  background: #f4f4f1;
+  border-right: 1px solid #e3e3de;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.workspace-sidebar > img {
+  width: 68px;
+  height: 78px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 6px;
+  filter: grayscale(1);
+}
+.workspace-sidebar h2 {
+  font-size: 23px;
+  margin: 18px 0 6px;
+}
+.workspace-sidebar p {
+  font-size: 12px;
+  color: #76766f;
+}
+.workspace-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin: 28px 0;
+}
+.workspace-tabs button {
+  text-align: left;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: #676760;
+  cursor: pointer;
+  font-size: 14px;
+}
+.workspace-tabs button[aria-selected="true"] {
+  background: #e6e6e1;
+  color: #181818;
+}
+.workspace-sidebar > a {
+  font-size: 12px;
+  color: #777;
+  margin-top: 13px;
+}
+.workspace-main {
+  padding: 28px 32px;
+  overflow: auto;
+}
+.workspace-main header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.workspace-main h2 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.workspace-main header p {
+  font-size: 12px;
+  color: #92928b;
+  margin-top: 7px;
+}
+.workspace-main header > a {
+  font-size: 11px;
+  border: 1px solid #e0e0db;
+  border-radius: 4px;
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+.current-role {
+  padding: 20px;
+  border: 1px solid #e5e5df;
+  background: white;
+}
+.current-role > span {
+  float: right;
+  font-size: 11px;
+  color: #8c8c85;
+}
+.current-role h3 {
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.current-role p {
+  font-size: 14px;
+  color: #72726b;
+  margin: 5px 0;
+}
+.workspace-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 18px 20px;
+  background: #f0f2f4;
+  margin: 15px 0;
+  gap: 20px;
+}
+.workspace-metrics > div + div {
+  border-left: 1px solid #dcdfdf;
+  padding-left: 20px;
+}
+.workspace-metrics strong {
+  display: block;
+  font-size: 25px;
+  font-weight: 300;
+}
+.workspace-metrics span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #85857d;
+  margin-top: 4px;
+}
+.career-rows > a {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 0.6fr 14px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e7e7e1;
+  font-size: 12px;
+}
+.career-rows strong {
+  font-weight: 400;
+}
+.career-rows span,
+.career-rows small {
+  color: #87877f;
+  font-size: 11px;
+}
+.career-rows b {
+  font-weight: 300;
+}
+.workspace-status {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-top: 1px solid #e3e3de;
+  color: #85857d;
+  font-size: 11px;
+  gap: 15px;
+}
+.workspace-project {
+  display: block;
+  padding: 22px 0;
+  border-bottom: 1px solid #e3e3dd;
+}
+.workspace-project small {
+  font-size: 10px;
+  color: #8b8b83;
+  letter-spacing: 0.08em;
+}
+.workspace-project h3 {
+  font-size: 27px;
+  margin: 14px 0;
+}
+.workspace-project p {
+  font-size: 16px;
+  color: #797972;
+  line-height: 1.5;
+}
+.portfolio-case-title {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 45%;
+  font-size: clamp(25px, 3.3vw, 48px);
+  line-height: 1.05;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+.portfolio-case-arrow {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: #0005;
+  font-size: 25px;
+}
+.portfolio-case-caption {
+  display: block;
+  margin-top: 13px;
+  text-align: left;
+  font-size: 13px;
+  color: #6a6a65;
+}
+.banking-use-case-frame > img {
+  filter: saturate(0.45) brightness(0.7);
+}
+.project-document {
+  min-height: 460px;
+  background: #f0f1ee;
+  border: 1px solid #e5e5e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.document-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 22px;
+  background: #e7e8e3;
+  font-size: 11px;
+  color: #777;
+}
+.document-body {
+  padding: 34px;
+  text-align: center;
+}
+.document-body small {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #94948c;
+}
+.document-body h3 {
+  margin: 15px 0 25px;
+  font-size: 30px;
+}
+.system-flow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13px;
+}
+.system-flow > span,
+.system-flow > div > span {
+  display: block;
+  padding: 10px 24px;
+  border: 1px solid #d3d5ce;
+  border-radius: 4px;
+  background: #fcfcfa;
+}
+.system-flow > div {
+  display: flex;
+  gap: 12px;
+}
+.system-flow i {
+  font-style: normal;
+  color: #9a9a91;
+}
+.document-body > p {
+  margin-top: 25px;
+  color: #8a8a80;
+  font-size: 12px;
+}
+.research-loop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+  color: #5e625a;
+}
+.research-loop > span:nth-child(odd) {
+  padding: 9px 15px;
+  background: #fafaf8;
+  border: 1px solid #d8dad2;
+  border-radius: 4px;
+}
+.it-workflow-copy > a {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  padding-bottom: 4px;
+  margin-top: 15px;
+}
+.personal-results {
+  display: grid;
+  align-content: center;
+  gap: 27px;
+  padding: 35px;
+  color: white;
+}
+.personal-results strong {
+  font-size: 34px;
+  font-weight: 300;
+  display: block;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+.personal-results span {
+  display: block;
+  font-size: 14px;
+  color: #ffffffb0;
+  margin-top: 8px;
+}
+.wonderful-footer-top {
+  grid-template-columns: 2.4fr 1fr 1fr 1fr;
+}
+.wonderful-footer-wordmark {
+  font-size: 15.8vw;
+}
+.inner {
+  --accent: #fff;
+  --paper: #fbfbfa;
+  --ink: #171817;
+  --muted: #767876;
+  background: #fbfbfa;
+}
+.inner .nav-shell {
+  display: grid;
+  min-height: 38px;
+  padding: 4px 6px;
+  border-radius: 7px;
+}
+.inner .brand {
+  gap: 6px;
+}
+.inner .page-hero {
+  background: #f0f0ed;
+  text-align: center;
+  padding: 160px 24px 85px;
+}
+.inner .page-hero p {
+  margin: 24px auto 0;
+}
+.inner .section {
+  background: #fbfbfa;
+}
+.inner .contact-banner {
+  background: #171817;
+}
+.inner .button {
+  background: white;
+  color: #111;
+}
+.inner footer.site-footer {
+  display: block;
+}
+.inner footer.site-footer > div {
+  margin-left: auto;
+}
+.inner footer.site-footer p {
+  margin-top: 16px;
+}
+.inner footer.site-footer .wonderful-footer-wordmark {
+  margin-top: 100px;
+}
+.inner .project {
+  border: 0;
+  background: none;
+}
+.inner .project-art {
+  border-radius: 8px;
+}
+.inner .project-copy {
+  padding-left: 0;
+  padding-right: 0;
+}
+.inner .project-grid {
+  gap: 35px;
+}
+.inner .portrait {
+  filter: grayscale(1);
+}
+@media (max-width: 980px) {
+  .workspace {
+    grid-template-columns: 180px 1fr;
+  }
+  .workspace-sidebar {
+    padding: 25px 18px;
+  }
+  .workspace-main {
+    padding: 25px 20px;
+  }
+  .workspace-main h2 {
+    font-size: 24px;
+  }
+  .career-rows > a {
+    grid-template-columns: 1fr 1.2fr 12px;
+  }
+  .career-rows small {
+    display: none;
+  }
+  .personal-results {
+    padding: 20px;
+  }
+  .personal-results strong {
+    font-size: 29px;
+  }
+}
+@media (max-width: 640px) {
+  .nav-shell {
+    grid-template-columns: 1fr auto;
+    min-height: 42px;
+  }
+  .nav-shell .brand {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    padding-left: 12px;
+  }
+  .nav-shell .menu-button {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .nav-left {
+    display: none !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 51px;
+    background: #242424f5;
+    border: 1px solid #ffffff30;
+    border-radius: 7px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+  .nav-left.is-open {
+    display: flex !important;
+  }
+  .nav-left a {
+    padding: 13px !important;
+  }
+  .nav-right {
+    display: none;
+  }
+  .financial-live-hero-heading {
+    padding-inline: 0 !important;
+  }
+  .hero-resume {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .portfolio-window {
+    height: auto !important;
+    min-height: 700px;
+    overflow: visible;
+    border-radius: 10px;
+    transform: translateY(26px);
+  }
+  .financial-live-hero-content {
+    padding-bottom: 50px !important;
+    min-height: 0 !important;
+  }
+  .financial-live-hero {
+    min-height: 0 !important;
+  }
+  .workspace {
+    display: block;
+  }
+  .workspace-sidebar {
+    padding: 16px;
+    border: 0;
+    border-bottom: 1px solid #e3e3dd;
+    display: block;
+  }
+  .workspace-sidebar > img {
+    width: 40px;
+    height: 44px;
+    float: left;
+    margin-right: 12px;
+  }
+  .workspace-sidebar h2 {
+    font-size: 20px;
+    margin: 0 0 4px;
+  }
+  .workspace-sidebar p {
+    font-size: 11px;
+  }
+  .workspace-sidebar > a {
+    display: none;
+  }
+  .workspace-tabs {
+    flex-direction: row;
+    margin: 18px 0 0;
+    gap: 5px;
+  }
+  .workspace-tabs button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .workspace-main {
+    padding: 20px 15px;
+  }
+  .workspace-main h2 {
+    font-size: 23px;
+  }
+  .workspace-main header > a {
+    display: none;
+  }
+  .window-bar {
+    padding: 0 12px;
+    gap: 12px;
+    font-size: 10px;
+  }
+  .window-bar > a {
+    font-size: 10px;
+  }
+  .workspace-metrics {
+    padding: 15px 10px;
+    gap: 10px;
+  }
+  .workspace-metrics > div + div {
+    padding-left: 10px;
+  }
+  .workspace-metrics strong {
+    font-size: 22px;
+  }
+  .workspace-metrics span {
+    font-size: 10px;
+  }
+  .current-role {
+    padding: 15px;
+  }
+  .current-role > span {
+    float: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .current-role h3 {
+    font-size: 25px;
+  }
+  .career-rows > a {
+    grid-template-columns: 1fr 12px;
+    padding: 12px 0;
+  }
+  .career-rows span {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .career-rows b {
+    grid-column: 2;
+    grid-row: auto;
+  }
+  .workspace-status {
+    padding: 12px 15px;
+    font-size: 10px;
+  }
+  .workspace-status > span {
+    max-width: 160px;
+  }
+  .banking-use-cases {
+    margin-top: 45px !important;
+    padding-top: 50px !important;
+  }
+  .banking-use-case-viewport {
+    height: 330px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding: 0 18px;
+  }
+  .banking-use-case-track {
+    align-items: stretch;
+  }
+  .banking-use-case-slide,
+  .banking-use-case-slide.is-active {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    transform: none;
+  }
+  .banking-use-case-track.has-focus .banking-use-case-slide:not(.is-active) {
+    flex-grow: 0;
+    transform: none;
+    opacity: 1;
+    filter: none;
+  }
+  .portfolio-case-title {
+    font-size: 36px;
+  }
+  .personal-results strong {
+    font-size: 27px;
+  }
+  .personal-results {
+    gap: 25px;
+    padding: 0 24px 35px;
+  }
+  .wonderful-footer-top {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 18px;
+    padding: 0 24px;
+  }
+  .wonderful-footer-company {
+    grid-column: 1/-1;
+  }
+  .wonderful-style-footer nav h2,
+  .wonderful-style-footer nav a {
+    font-size: 13px;
+  }
+  .inner .nav-shell {
+    display: grid;
+  }
+  .inner .menu-button {
+    width: 34px;
+    height: 30px;
+    padding: 0;
+  }
+  .inner .menu-button span {
+    margin: 4px auto;
+  }
+  .project-document {
+    min-height: 390px;
+  }
+  .document-body {
+    padding: 25px 18px;
+  }
+  .document-body h3 {
+    font-size: 25px;
+  }
+  .system-flow > div {
+    gap: 7px;
+  }
+  .system-flow > div > span {
+    padding: 10px;
+  }
+  .inner .site-header {
+    left: 0;
+    right: 0;
+  }
+  .inner .project-art {
+    height: 260px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+#industry-page .workspace-sidebar h2 {
+  font-size: 23px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.03em !important;
+}
+#industry-page .workspace-main h2 {
+  font-size: 28px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.03em !important;
+}
+#industry-page .current-role h3 {
+  font-size: 25px !important;
+}
+#industry-page .workspace-project h3 {
+  font-size: 27px !important;
+}
+@media (max-width: 640px) {
+  #industry-page .workspace-sidebar h2 {
+    font-size: 20px !important;
+  }
+  #industry-page .workspace-main h2 {
+    font-size: 23px !important;
+  }
+}
+.experience-photo {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.inner .experience {
+  grid-template-columns: 1fr 1.65fr;
+}
+.inner .experience-photo {
+  filter: saturate(0.65);
+}
+@media (max-width: 640px) {
+  .inner .experience {
+    grid-template-columns: 1fr;
+  }
+  .experience-photo {
+    height: 230px;
+  }
+}
+/* Static Pages uses normal document flow instead of the reference's two-card scroll pinning. */
+.banking-roi-stack {
+  height: auto !important;
+}
+.banking-roi-stage {
+  height: auto !important;
+  position: relative !important;
+  top: auto !important;
+  display: block;
+}
+.banking-roi-card {
+  position: relative !important;
+  transform: none !important;
+}
+.banking-roi-showcase {
+  padding-bottom: 30px !important;
+}
+body[data-industry] #industry-page > section.portfolio-education {
+  padding: 0 clamp(24px, 3vw, 48px) 100px;
+}
+.education-panel {
+  max-width: 1344px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 28px;
+  background: #314935;
+  color: white;
+  min-height: 550px;
+  box-shadow: 0 20px 40px #0002;
+}
+.education-panel > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.68);
+}
+.education-panel > div {
+  padding: 65px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+}
+.education-panel > div > p {
+  grid-column: 1/-1;
+  font-size: 14px;
+  color: #ffffffb0;
+}
+.education-panel h2 {
+  color: white !important;
+  font-size: 44px !important;
+  grid-row: 2/4;
+  margin-top: 20px !important;
+  max-width: 490px;
+  line-height: 1.12 !important;
+}
+.education-record {
+  border-bottom: 1px solid #ffffff30;
+  padding: 25px 0;
+}
+.education-record span {
+  font-size: 12px;
+  color: #ffffffb0;
+}
+.education-record h3 {
+  color: white !important;
+  font-size: 27px !important;
+  line-height: 1.2;
+  margin: 12px 0 !important;
+}
+.education-record p {
+  font-size: 15px;
+  color: #ffffffb0 !important;
+  margin-top: 6px;
+}
+.education-panel .education-record:last-child {
+  border: 0;
+}
+body[data-industry]
+  #industry-page
+  section.portfolio-carousel
+  .business-progress-heading
+  h2 {
+  color: #f1f1f1 !important;
+}
+@media (max-width: 760px) {
+  body[data-industry] #industry-page > section.portfolio-education {
+    padding: 0 10px 60px;
+  }
+  .education-panel {
+    border-radius: 18px;
+    min-height: 0;
+  }
+  .education-panel > div {
+    padding: 35px 25px;
+    grid-template-columns: 1fr;
+  }
+  .education-panel h2 {
+    font-size: 34px !important;
+    grid-row: auto;
+    margin-bottom: 20px !important;
+  }
+  .education-record h3 {
+    font-size: 25px !important;
+  }
+}
+body[data-industry] #industry-page .education-panel h2,
+body[data-industry] #industry-page .education-panel h3 {
+  color: #fff !important;
+}
+body[data-industry] #industry-page > .banking-roi-showcase {
+  padding-bottom: 28px !important;
+}

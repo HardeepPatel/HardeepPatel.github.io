@@ -1,0 +1,17 @@
+Tool: built-in image_gen, edit mode.
+Sources: images/agri.jpg, images/infibeam.jpg, images/ISRO.jpg.
+Outputs: agriculture-motion.png, payments-motion.png, isro-motion.png.
+
+Shared prompt:
+Edit this existing portfolio image for an elegant photographic project card on a software engineer's portfolio. Improve resolution, tonal balance and crispness of the main subject. Apply tasteful directional horizontal photographic motion blur primarily at the left and right edges, preserving a clear central subject. Quiet editorial finish, natural materials, not glossy AI art. Landscape 3:2 composition. No extra objects, no invented labels, no new text, no frames. Save an image output.
+
+Agriculture-specific instruction:
+Preserve the exact planted crop rows and low camera viewpoint. Restrained forest green and warm earth tones.
+
+Payments-specific instruction:
+Preserve the smartphone, hand, exact Infibeam Avenues and UPI logos and wording. Keep all text and logos clear and unchanged. Muted warm terracotta and charcoal palette.
+
+Space-specific instruction:
+Preserve the Earth horizon and ISRO emblem exactly, including all lettering. Keep emblem readable. Restrained deep navy and warm orange palette.
+
+2026-10-03: agriculture-motion-v2.png generated as a square panning photograph of a tractor and crop rows, with motion streaks across the whole frame. Source: exec-ebe31ea1-29d5-492d-9dec-b875762f9079.png. Infibeam image unchanged; homepage displays its full frame to preserve original blur.

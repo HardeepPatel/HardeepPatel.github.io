@@ -1,484 +1,849 @@
-<!DOCTYPE html>
-<!-- This site was created in Webflow. https://webflow.com -->
-<!-- Last Published: Wed Feb 05 2025 09:17:12 GMT+0000 (Coordinated Universal Time) -->
-<html data-wf-domain="www.antonoratom.com" data-wf-page="64b7e915773cb9568b475e57" data-wf-site="64b7e915773cb9568b475e5b">
-
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
-    <title>Hardeep Patel</title>
-    
-    <link href="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/css/antons-homeland.webflow.c35d9e0d1.min.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript">
-        ! function(o, c) {
-            var n = c.documentElement,
-                t = " w-mod-";
-            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-        }(window, document);
-    </script>
-    <link href="./images/letter-h.png" rel="shortcut icon" type="image/x-icon" />
-   
-    <!-- Chart for foundrazing -->
-
-    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.10.0-min.js.gz">
-    </script>
-    <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.6.17-min.js.gz"></script>
-    <script>
-        window.amplitude.add(window.sessionReplay.plugin({
-            sampleRate: 1
-        })).promise.then(function() {
-            window.amplitude.init('21f98223e5f6d3e89227295ec3633597', {
-                "serverZone": "EU",
-                "autocapture": {
-                    "elementInteractions": true
-                }
-            });
-        });
-    </script>
-
-
-    <!-- Finsweet Cookie Consent 
-<script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"></script>-->
-
-
-    <!-- Google Tag Manager 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M9VGBNBP');</script>
-<!-- End Google Tag Manager -->
-
-    <!--MS Clarity type="fs-cc"-->
-    <script>
-        (function(c, l, a, r, i, t, y) {
-            c[a] = c[a] || function() {
-                (c[a].q = c[a].q || []).push(arguments)
-            };
-            t = l.createElement(r);
-            t.async = 1;
-            t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "mub2jf6108");
-    </script>
-
-    <!-- Google analytic (gtag.js) type="fs-cc"-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2MF53ZT86"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-E2MF53ZT86');
-    </script>
-
-    <!-- Hotjar Tracking Code for https://www.antonoratom.com type="fs-cc"-->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 3673285,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
-
-
-    <!-- Ivy Presto font -->
-    <link href="//fastly-cloud.typenetwork.com/projects/7546/fontface.css?65115590" rel="stylesheet" type="text/css">
-
-    <style>
-        /***************************************************************
-These styles are subject to the license agreement(s) provided when you purchased the license(s).
-
-	https://store.typenetwork.com/cart/eula/type-network
-
-***************************************************************/
-
-        .custom-f {
-            font-family: "IvyPresto Disp Lt It";
-            font-display: swap;
-            font-style: italic;
-            font-weight: normal;
-            letter-spacing: .05em;
-        }
-
-        .custom-f.l {
-            font-family: "IvyPresto Disp Thi It";
-            font-display: swap;
-            font-style: italic;
-            font-weight: normal;
-            letter-spacing: .025em;
-        }
-    </style>
-
-    <!-- [Attributes by Finsweet] Mirror click events -->
-    <script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-mirrorclick@1/mirrorclick.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
-
-
-
-    <style>
-        html,
-        body {
-            font-size: 1.1111111111111112vw;
-            overscroll-behavior: none;
-        }
-
-        /* Max Font Size */
-
-        @media (min-width:1640px) and (min-height: 800px) {
-            body {
-                font-size: 16px;
-            }
-        }
-
-        @media (min-width:992px) and (max-height: 799px) {
-            body {
-                font-size: 2vh;
-            }
-        }
-
-        @media (max-width:1300px) and (min-height: 800px) {
-            body {
-                font-size: 1vw;
-            }
-        }
-
-        @media screen and (max-width:991px) {
-            body {
-                font-size: 16px;
-            }
-        }
-
-        @media screen and (max-width:420px) {
-            body {
-                font-size: 14px;
-            }
-        }
-
-        /* Container Max Width */
-
-        .container {
-            max-width: 1640px;
-        }
-    </style>
-    <script>
-        if (window.innerWidth > 992) {
-            var script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/gh/antonoratom/antonoratom@v1/HomeLoadAndHovers.js';
-            document.head.appendChild(script);
-        }
-    </script>
-</head>
-
-<body>
-    <div class="global-wrapper">
-        <section class="main-container col-light-bg">
-            <header class="video-bg-wrap">
-                <div id="w-node-_913d1958-d064-047b-ba98-4c2e6fd9bb99-8b475e57" class="video-col-bg-wrap">
-                    <div id="w-node-c0e934b6-62b6-b1f3-2414-92884e9afff5-8b475e57" class="bg-video-hor-plain"></div>
-                    <div class="bg-video-vert-plain"></div>
-                    <div class="grad-mask-wrap">
-                        <div data-w-id="c8eb8ad5-799b-2190-14e1-29ea5579927d" class="bg-vid-mask-wrap">
-                            <div id="w-node-_9f09272f-5968-d102-0a75-876cdbb99918-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-_0cf6e5bd-02ad-0e0f-fc9b-089fe5d8f430-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-_005465a6-82da-b4ea-836d-76e8a77d9cd7-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-_9f0555e2-c1a4-f5b3-7c30-402ae1221fdd-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-_50377f1e-dcdb-612a-9094-f823cc6589df-8b475e57" class="bg-vid-mask"></div>
-                            <div id="w-node-_598fb391-ad31-f437-0f04-c14884600e74-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-_11e11d0f-9c21-d68d-5524-5a2c01c0d4f9-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-_3f05af81-f4c8-eb18-f802-e53169a680c2-8b475e57" class="bg-vid-plain"></div>
-                            <div id="w-node-b37cd3bb-7bc6-9a90-3d3f-e2a835c06ffd-8b475e57" class="bg-vid-plain"></div>
-                        </div>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Software Engineer | Hardeep Patel</title>
+    <meta
+      name="description"
+      content="Hardeep Patel — founding software engineer in San Francisco. Backend systems, full-stack products, and production AI."
+    />
+    <link rel="canonical" href="https://hardeepPatel.github.io/" />
+    <meta property="og:title" content="Software Engineer | Hardeep Patel" />
+    <meta
+      property="og:description"
+      content="Hardeep Patel — founding software engineer. Backend services, full-stack products, and production AI."
+    />
+    <meta
+      property="og:image"
+      content="https://hardeeppatel.github.io/images/hero-poster.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/ABC-Favorit-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/reference-frame.css" />
+    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="assets/css/banking-reference.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/work-carousel.css" />
+    <link rel="stylesheet" href="assets/css/refinements.css" />
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+    <script src="assets/js/projects.js" defer></script>
+    <link rel="stylesheet" href="assets/css/project-reference.css" />
+  </head>
+  <body data-industry="banking-financial-services">
+    <a class="skip" href="#industry-page">Skip to content</a>
+    <header class="site-header" aria-label="Main navigation">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <div class="nav-left" id="navigation">
+          <a href="html/works.html">Work</a
+          ><a href="html/expertise.html">Skills</a
+          ><a href="html/about.html">About</a>
+        </div>
+        <a class="brand" href="index.html"
+          ><img
+            class="personal-mark"
+            src="images/hp-mark.svg"
+            alt=""
+            width="24"
+            height="24"
+          />Hardeep Patel</a
+        >
+        <div class="nav-right">
+          <a href="https://github.com/HardeepPatel">GitHub</a
+          ><a href="html/contacts.html">Contact</a>
+        </div>
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+    <main id="industry-page">
+      <section
+        class="reference-hero financial-hero financial-live-hero"
+        aria-labelledby="reference-title"
+      >
+        <img
+          class="reference-hero-image"
+          src="images/hardeep-editorial.png"
+          alt="Hardeep Patel in a suit, with a softly blurred city background"
+          fetchpriority="high"
+        />
+        <div class="reference-hero-overlay" aria-hidden="true"></div>
+        <div
+          class="reference-shell reference-hero-content financial-live-hero-content"
+        >
+          <div class="financial-live-stage">
+            <div class="financial-live-hero-heading">
+              <span class="hero-location">Hardeep Patel · San Francisco</span>
+              <h1 id="reference-title">Software engineer.<br>From systems to product.</h1>
+              <p class="financial-live-hero-subtitle">
+                At Context Labs, I build AI products end to end—from cloud infrastructure and agent memory to the customer experience.
+              </p>
+              <a
+                class="hero-resume"
+                href="assets/documents/Hardeep-Patel-Resume.pdf"
+                >View résumé <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="financial-live-demo portfolio-window">
+              <div class="window-bar">
+                <div aria-hidden="true"><i></i><i></i><i></i></div>
+                <span>Hardeep Patel / Portfolio</span
+                ><a href="html/about.html">About me ↗</a>
+              </div>
+              <div class="workspace">
+                <aside class="workspace-sidebar">
+                  <img src="images/hardeep-profile.png" alt="Hardeep Patel" />
+                  <h2>Hardeep Patel</h2>
+                  <p>Founding Software Engineer</p>
+                  <div
+                    class="workspace-tabs"
+                    role="tablist"
+                    aria-label="Portfolio overview"
+                  >
+                    <button
+                      role="tab"
+                      id="tab-experience"
+                      aria-controls="panel-experience"
+                      aria-selected="true"
+                    >
+                      Experience</button
+                    ><button
+                      role="tab"
+                      id="tab-projects"
+                      aria-controls="panel-projects"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Projects</button
+                    ><button
+                      role="tab"
+                      id="tab-education"
+                      aria-controls="panel-education"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Education
+                    </button>
+                  </div>
+                  <a href="https://github.com/HardeepPatel">GitHub ↗</a
+                  ><a href="https://linkedin.com/in/hardeep-patel/"
+                    >LinkedIn ↗</a
+                  >
+                </aside>
+                <div class="workspace-main">
+                  <section
+                    id="panel-experience"
+                    role="tabpanel"
+                    aria-labelledby="tab-experience"
+                  >
+                    <header>
+                      <div>
+                        <h2>Building Context Labs, end to end.</h2>
+                        <p>San Francisco, CA · Currently at Context Labs</p>
+                      </div>
+                      <a href="html/works.html">View all work ↗</a>
+                    </header>
+                    <div class="current-role">
+                      <span>Jun 2026 — Present</span>
+                      <h3>Context Labs</h3>
+                      <p>Founding Software Engineer, Forward Deployed</p>
+                      <p>
+                        Building the platform, integrations, and agent memory that take enterprise workflows into production. Working directly with customers from the first requirements to a live deployment.
+                      </p><p class="role-cloud">AWS delivery: CodeBuild and ECR for container builds, ECS Fargate for services, and S3/CloudFront for the web app.
+                      </p>
                     </div>
+                    <div class="workspace-metrics">
+                      <div>
+                        <strong>2 days</strong
+                        ><span>Customer time-to-value, down from 2 weeks</span>
+                      </div>
+                      <div>
+                        <strong>20+ hours</strong
+                        ><span>Saved per week across 5 AI workflows</span>
+                      </div>
+                      <div>
+                        <strong>6+</strong
+                        ><span>Integrations with standardized OAuth</span>
+                      </div>
+                    </div>
+                    <div class="career-rows">
+                      <a href="html/works.html#toya"
+                        ><strong>Toya Agrisolutions</strong
+                        ><span>Software Engineering Intern</span
+                        ><small>2023 — 2024</small><b>↗</b></a
+                      ><a href="html/works.html#infibeam"
+                        ><strong>Infibeam Avenues</strong
+                        ><span>Product Software Engineering Intern</span
+                        ><small>2023</small><b>↗</b></a
+                      ><a href="html/works.html#isro"
+                        ><strong>ISRO</strong><span>ML Engineer Intern</span
+                        ><small>2023</small><b>↗</b></a
+                      ><a href="html/works.html#iit"
+                        ><strong>IIT Roorkee</strong><span>Research Intern</span
+                        ><small>2022</small><b>↗</b></a
+                      >
+                    </div>
+                  </section>
+                  <section
+                    id="panel-projects"
+                    role="tabpanel"
+                    aria-labelledby="tab-projects"
+                    hidden
+                  >
+                    <header>
+                      <div>
+                        <h2>Selected projects</h2>
+                        <p>
+                          Distributed systems and AI-assisted systems research.
+                        </p>
+                      </div>
+                    </header>
+                    <a
+                      class="workspace-project"
+                      href="https://github.com/HardeepPatel/Distributed_Banking_System"
+                      ><small>GO · RPC · PAXOS · TWO-PHASE COMMIT</small>
+                      <h3>Distributed Banking System ↗</h3>
+                      <p>
+                        Fault-tolerant, sharded banking with consensus and
+                        atomic transactions. Benchmarked at 80 TPS with
+                        linearizability.
+                      </p></a
+                    ><a
+                      class="workspace-project"
+                      href="assets/documents/Hardeep-Patel-Resume.pdf"
+                      ><small>PYTHON · C++ · RUST · LLMs · CHAMPSIM</small>
+                      <h3>Autonomous Caching Policy Evolution ↗</h3>
+                      <p>
+                        LLM-generated cache policies improved last-level cache
+                        hit rate by 11.09% over LRU.
+                      </p></a
+                    >
+                  </section>
+                  <section
+                    id="panel-education"
+                    role="tabpanel"
+                    aria-labelledby="tab-education"
+                    hidden
+                  >
+                    <header>
+                      <div>
+                        <h2>Education</h2>
+                        <p>Computer science, systems, and machine learning.</p>
+                      </div>
+                    </header>
+                    <div class="workspace-project">
+                      <small>AUG 2024 — MAY 2026</small>
+                      <h3>Arizona State University</h3>
+                      <p>M.S. in Computer Science · GPA 3.93 / 4.00</p>
+                      <p>Teaching Assistant: Cloud Computing and Math.</p>
+                    </div>
+                    <div class="workspace-project">
+                      <small>JUN 2020 — JUN 2024</small>
+                      <h3>Pandit Deendayal Energy University</h3>
+                      <p>B.Tech. in Computer Science · GPA 9.61 / 10.00</p>
+                    </div>
+                  </section>
                 </div>
-                <div id="w-node-_88f95aa0-f726-e35a-bff9-907c66102d8f-8b475e57" class="bg-vid-bl">
-                    <div data-poster-url="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650f0d0f1ab715b6bcc686e6_video bg 2309-с-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650f0d0f1ab715b6bcc686e6_video bg 2309-с-transcode.mp4,https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650f0d0f1ab715b6bcc686e6_video bg 2309-с-transcode.webm"
-                        data-autoplay="true" data-loop="true" data-wf-ignore="true" id="w-node-c4905d9f-a829-79aa-cb06-48e05d86fb89-8b475e57" class="cases-bg-vid w-background-video w-background-video-atom"><video id="c4905d9f-a829-79aa-cb06-48e05d86fb89-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650f0d0f1ab715b6bcc686e6_video bg 2309-с-poster-00001.jpg&quot;)"
-                            muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650f0d0f1ab715b6bcc686e6_video bg 2309-с-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650f0d0f1ab715b6bcc686e6_video bg 2309-с-transcode.webm" data-wf-ignore="true"/></video></div>
+              </div>
+              <div class="workspace-status">
+                <span
+                  >Backend engineering · Full-stack development · AI
+                  agents</span
+                ><a href="mailto:hardeep.s.patel@gmail.com">Get in touch ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="business-progress portfolio-carousel"
+        id="selected-work"
+        aria-labelledby="work-heading"
+      >
+        <header class="business-progress-heading">
+          <h2 id="work-heading">A few places I’ve made a difference.</h2><div class="carousel-navigation"><span data-work-count>01 / 05</span></div>
+        </header>
+        <div
+          class="progress-viewport"
+          role="region"
+          aria-label="Work experience carousel"
+        >
+          <ul class="progress-track" role="list" style="--progress-count: 5">
+            <li class="progress-slide is-active">
+              <button
+                class="progress-rail"
+                type="button"
+                aria-expanded="true"
+                aria-controls="work-context"
+              >
+                <span class="progress-rail-title">Context Labs</span></button
+              ><a
+                class="progress-card"
+                id="work-context"
+                href="html/works.html#context"
+                ><img
+                  class="progress-card-image"
+                  src="images/work/context-motion.png"
+                  alt="Context Labs"
+                  loading="lazy"
+                />
+                <div class="progress-card-metric">
+                  <span class="progress-card-metric-value">20+ hours</span
+                  ><span class="progress-card-metric-label"
+                    >saved each week across 5 AI workflows</span
+                  >
                 </div>
+                <span class="work-card-caption"
+                  >Production AI & enterprise software<span>↗</span></span
+                ></a
+              >
+            </li>
+            <li class="progress-slide">
+              <button
+                class="progress-rail"
+                type="button"
+                aria-expanded="false"
+                aria-controls="work-toya"
+              >
+                <span class="progress-rail-title"
+                  >Toya Agrisolutions</span
+                ></button
+              ><a
+                class="progress-card"
+                id="work-toya"
+                inert
+                href="html/works.html#toya"
+                ><img
+                  class="progress-card-image"
+                  src="images/work/agriculture-motion-v2.png"
+                  alt="Toya Agrisolutions"
+                  loading="lazy"
+                />
+                <div class="progress-card-metric">
+                  <span class="progress-card-metric-value">40%</span
+                  ><span class="progress-card-metric-label"
+                    >lower API latency</span
+                  >
+                </div>
+                <span class="work-card-caption"
+                  >Software for agriculture<span>↗</span></span
+                ></a
+              >
+            </li>
+            <li class="progress-slide">
+              <button
+                class="progress-rail"
+                type="button"
+                aria-expanded="false"
+                aria-controls="work-infibeam"
+              >
+                <span class="progress-rail-title"
+                  >Infibeam Avenues</span
+                ></button
+              ><a
+                class="progress-card"
+                id="work-infibeam"
+                inert
+                href="html/works.html#infibeam"
+                ><img
+                  class="progress-card-image"
+                  src="images/work/payments-motion.png"
+                  alt="Infibeam Avenues"
+                  loading="lazy"
+                />
+                <div class="progress-card-metric">
+                  <span class="progress-card-metric-value">2M+</span
+                  ><span class="progress-card-metric-label"
+                    >transactions monitored per month</span
+                  >
+                </div>
+                <span class="work-card-caption"
+                  >Payments & platform engineering<span>↗</span></span
+                ></a
+              >
+            </li>
+            <li class="progress-slide">
+              <button
+                class="progress-rail"
+                type="button"
+                aria-expanded="false"
+                aria-controls="work-isro"
+              >
+                <span class="progress-rail-title">ISRO</span></button
+              ><a
+                class="progress-card"
+                id="work-isro"
+                inert
+                href="html/works.html#isro"
+                ><img
+                  class="progress-card-image"
+                  src="images/work/isro-motion.png"
+                  alt="ISRO"
+                  loading="lazy"
+                />
+                <div class="progress-card-metric">
+                  <span class="progress-card-metric-value">2 hours</span
+                  ><span class="progress-card-metric-label"
+                    >earlier flood warnings</span
+                  >
+                </div>
+                <span class="work-card-caption"
+                  >Flood forecasting with machine learning<span>↗</span></span
+                ></a
+              >
+            </li>
+            <li class="progress-slide">
+              <button
+                class="progress-rail"
+                type="button"
+                aria-expanded="false"
+                aria-controls="work-iit"
+              >
+                <span class="progress-rail-title">IIT Roorkee</span></button
+              ><a
+                class="progress-card"
+                id="work-iit"
+                inert
+                href="html/works.html#iit"
+                ><img
+                  class="progress-card-image"
+                  src="images/work/iit-motion.png"
+                  alt="IIT Roorkee"
+                  loading="lazy"
+                />
+                <div class="progress-card-metric">
+                  <span class="progress-card-metric-value">3×</span
+                  ><span class="progress-card-metric-label"
+                    >faster graph algorithms</span
+                  >
+                </div>
+                <span class="work-card-caption"
+                  >Graph algorithms & research<span>↗</span></span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="banking-ecosystem" id="skills">
+        <div class="banking-ecosystem-shell">
+          <div class="banking-ecosystem-intro">
+            <a class="banking-ecosystem-link" href="html/about.html"
+              >About my work <span>›</span></a
+            >
+            <div class="banking-ecosystem-intro-copy">
+              <p><strong>I work where the product meets the systems underneath it.</strong> At Context Labs, I turn customer workflows into working software: connecting their tools, building agent memory, and taking the product from interface to cloud deployment. My onboarding work cut time-to-value from two weeks to two days.</p>
+              <p><strong>Before that, I built for farms, payments, and flood forecasting.</strong> Faster APIs for a platform serving 500K+ farmers. Monitoring for 2M+ monthly transactions. Earlier flood warnings at ISRO. Across those teams, my work has been about making a system more useful, more reliable, or faster—and measuring the difference.</p>
+            </div>
+          </div>
+          <div class="banking-ecosystem-capability">
+            <span class="banking-ecosystem-link">Technical skills</span>
+            <h2 id="banking-ecosystem-title">
+              The languages, systems, and tools<br />I build with.
+            </h2>
+            <div
+              class="banking-application-cloud"
+              aria-label="Technical skills"
+            >
+              <div class="banking-application-grid">
+                <span
+                  class="banking-application"
+                  title="Python"
+                  aria-label="Python"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/python.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="TypeScript"
+                  aria-label="TypeScript"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/typescript.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Go"
+                  aria-label="Go"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/go.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="C++"
+                  aria-label="C++"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/cplusplus.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Java"
+                  aria-label="Java"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/java.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="JavaScript"
+                  aria-label="JavaScript"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/javascript.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="React"
+                  aria-label="React"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/react.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Next.js"
+                  aria-label="Next.js"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/nextjs.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Node.js"
+                  aria-label="Node.js"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/nodejs.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="FastAPI"
+                  aria-label="FastAPI"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/fastapi.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="PostgreSQL"
+                  aria-label="PostgreSQL"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/postgresql.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="MongoDB"
+                  aria-label="MongoDB"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/mongodb.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="AWS"
+                  aria-label="AWS"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/amazonwebservices.svg"
+                    alt=""
+                    loading="lazy"
+                  /><span class="skill-name">AWS</span></span
+                ><span
+                  class="banking-application"
+                  title="Azure"
+                  aria-label="Azure"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/azure.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Docker"
+                  aria-label="Docker"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/docker.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Kubernetes"
+                  aria-label="Kubernetes"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/kubernetes.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Terraform"
+                  aria-label="Terraform"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/terraform.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Git"
+                  aria-label="Git"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/git.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Kafka"
+                  aria-label="Kafka"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/apachekafka.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Spark"
+                  aria-label="Spark"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/apachespark.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="Linux"
+                  aria-label="Linux"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/linux.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="LangChain"
+                  aria-label="LangChain"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/langchain.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="RAG"
+                  aria-label="RAG"
+                  tabindex="0"
+                  ><img
+                    src="assets/skills/rag.svg"
+                    alt=""
+                    loading="lazy" /></span
+                ><span
+                  class="banking-application"
+                  title="LLM agents"
+                  aria-label="LLM agents"
+                  tabindex="0"
+                  ><img src="assets/skills/agents.svg" alt="" loading="lazy"
+                /></span>
+              </div>
+            </div>
+            <p class="banking-ecosystem-statement">
+              <strong>From the application to the infrastructure.</strong> REST
+              APIs and gRPC, relational and document databases, cloud
+              deployment, retrieval, and agent workflows — with OAuth, single
+              sign-on, and role-based access.
+            </p>
+          </div>
+        </div>
+      </section>
+<section class="financial-workflows portfolio-projects" id="projects" aria-labelledby="projects-heading">
+  <div class="reference-record-heading"><h2 id="projects-heading">Two systems I built.<br>From the first request to the result.</h2><p>A distributed bank that keeps transfers consistent. A research loop that designs and tests better cache policies.</p></div>
+  <div class="it-workflow-grid consulting-workflow-grid">
+    <article class="it-workflow-card">
+      <div class="financial-poetic-demo financial-procedure-demo" data-financial-demo="procedure" data-phase="0" aria-label="Distributed Banking System: a fifty-dollar transfer coordinated across two shards">
+        <div class="financial-poetic-stage">
+          <div class="financial-poetic-intro"><p>One transfer. Two shards.<br>Both commit—or neither does.</p></div>
+          <div class="financial-upload-card"><small>Transfer request · $50.00</small><div><span><i>A</i><b>Sender · $200.00</b></span><span><i>B</i><b>Receiver · $100.00</b></span><span><i>RPC</i><b>Cross-shard transaction</b></span></div><button type="button" data-scene-next aria-label="Send the example transfer">↑</button></div>
+          <div class="financial-runbook-editor"><header><div><img class="project-hp-mark" src="images/hp-mark.svg" alt=""><p><strong>Distributed Banking System</strong><small>Go · Paxos · Two-phase commit</small></p></div><span>Transaction plan</span></header><ol><li><i></i><p><b>Find the shard leaders</b><small>Route the sender and receiver to their owning shards.</small></p><em>RPC</em></li><li><i></i><p><b>Replicate the operation</b><small>Reach agreement among the replicas in each shard.</small></p><em>Paxos</em></li><li><i></i><p><b>Prepare both sides</b><small>Collect a prepared or abort vote from each shard.</small></p><em>Phase 1</em></li><li><i></i><p><b>Send the final decision</b><small>Commit only when both shards are ready.</small></p><em>Phase 2</em></li><li><i></i><p><b>Apply the balance updates</b><small>Debit and credit together; preserve the total.</small></p><em>Atomic</em></li></ol></div>
+          <div class="financial-runbook-preview financial-dispute-system"><header><span>Cross-shard transfer</span><b>$50.00 · A → B</b></header><div><small>TWO-PHASE COMMIT</small><h4>Prepare on both shards before changing either balance.</h4><p><i></i>Sender shard located</p><p><i></i>Receiver shard located</p><p><i></i>Operation replicated</p><p><i></i>Prepare requests sent</p></div><aside><span>Coordinator waiting…</span><b>No partial transfer</b><small>If either shard rejects the prepare, both sides abort and balances stay unchanged.</small></aside></div>
+          <div class="financial-extraction-toast"><i></i><p><strong>Both shards prepared</strong><small>Coordinator sends COMMIT to the sender and receiver</small></p></div>
+          <div class="financial-poetic-ready"><img class="project-hp-mark" src="images/hp-mark.svg" alt=""><p><strong>Transfer committed on both sides</strong><small>Sender: $150.00 · Receiver: $150.00 · Total: $300.00</small></p><span>Complete</span></div>
+        </div>
+      </div>
+      <div class="reference-demo-controls" aria-label="Banking animation controls"><span data-animation-caption>Request</span><div><button type="button" data-animation-replay aria-label="Replay banking animation">↺</button><button type="button" data-animation-next aria-label="Next banking scene">→</button></div></div>
+      <div class="it-workflow-copy"><h3>Distributed Banking System</h3><p>I built a sharded bank in Go with Paxos replication and two-phase commit. A transfer can span servers without leaving one account debited and the other unpaid. The system achieved 80 transactions per second while preserving linearizability.</p><a href="https://github.com/HardeepPatel/Distributed_Banking_System" target="_blank" rel="noopener">Explore the code ↗</a></div>
+    </article>
+    <article class="it-workflow-card">
+      <div class="financial-poetic-demo financial-execution-demo" data-financial-demo="execution" data-phase="0" aria-label="Autonomous Caching Policy Evolution: retrieve experiments, generate a policy, evaluate in ChampSim, and retain results">
+        <div class="financial-poetic-stage">
+          <div class="financial-execution-shell"><header><div><img class="project-hp-mark" src="images/hp-mark.svg" alt=""><p><strong>Evolve a cache replacement policy</strong><small>Python · C++ / Rust · ChampSim</small></p></div><span>Running</span></header><ol><li class="step-a"><i></i><p><b>Retrieve previous experiments</b><small>Recover policies and evaluation history from SQLite</small></p></li><li class="step-b"><i></i><p><b>Generate a new candidate</b><small>Use prior results as context for policy generation</small></p></li><li class="step-c"><i></i><p><b>Implement the replacement rule</b><small>Produce C++ / Rust code for simulator evaluation</small></p></li><li class="step-d"><i></i><p><b>Evaluate on real workloads</b><small>Run ChampSim on HPC and compare against LRU</small></p></li></ol></div>
+          <div class="financial-recovery-card financial-signal-evidence"><header><img class="project-hp-mark" src="images/hp-mark.svg" alt=""><p><small>Experiment retrieval</small><strong>Start with what has already been learned</strong></p></header><ol><li><i></i>Retrieve earlier replacement policies</li><li><i></i>Include simulator results and workload context</li><li><i></i>Pass the evidence into the next generation</li></ol></div>
+          <div class="financial-investigation-report"><header><div><img class="project-hp-mark" src="images/hp-mark.svg" alt=""><p><strong>Candidate policy</strong><small>Generated for evaluation</small></p></div><span>C++ / Rust</span></header><article><p><small>Input</small><b>Prior policies, evaluation history, and workload context</b></p><p><small>Replacement decision</small><b>Choose which cache line to evict when a new line arrives</b></p><p><small>Next step</small><b>Run the implementation in ChampSim to measure its behavior</b></p></article></div>
+          <div class="financial-expert-feedback"><small>Evaluation loop</small><p>A plausible rule is only a candidate. Run it against memory-access workloads and compare the measured hit rate with LRU.</p><span>ChampSim · HPC evaluation</span></div>
+          <div class="financial-backtest-card"><header><span>Research result</span><b>Compared with LRU</b></header><p><i></i>Candidate policies evaluated in <b>ChampSim</b></p><p><i></i>Experiments executed on <b>HPC</b></p><div class="portfolio-benchmark-result"><small>Cache hit-rate improvement<b>+11.09%</b></small></div></div>
+          <div class="financial-change-review"><header><span>Keep the evidence for the next experiment</span><b>SQLite</b></header><p>Store the policy and its evaluation results. Retrieval supplies that history to the next generation, closing the loop.</p><div><small>Retain<b>Policy + results</b></small><small>Reuse<b>Experiment context</b></small></div><footer><span>Evaluate</span><b>Generate next</b></footer></div>
+          <div class="financial-execution-complete"><i></i><p><strong>The next candidate starts with prior results</strong><small>Retrieve → generate → evaluate → retain</small></p></div>
+        </div>
+      </div>
+      <div class="reference-demo-controls" aria-label="Caching animation controls"><span data-animation-caption>Retrieve</span><div><button type="button" data-animation-replay aria-label="Replay caching animation">↺</button><button type="button" data-animation-next aria-label="Next caching scene">→</button></div></div>
+      <div class="it-workflow-copy"><h3>Autonomous Caching Policy Evolution</h3><p>I built a retrieval-backed generation loop that turns experiment history into new C++/Rust cache policies. ChampSim evaluations on HPC feed results back into SQLite for the next iteration. The research achieved an 11.09% hit-rate improvement over LRU.</p><a href="assets/documents/Hardeep-Patel-Resume.pdf">Read the project results ↗</a></div>
+    </article>
+  </div>
+</section>
+      <section
+        class="impact-deck"
+        id="impact"
+        aria-label="Impact and education"
+      >
+        <article class="impact-sheet impact-production">
+          <img
+            src="assets/reference/banking-gradient-blue.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <div class="impact-layout">
+            <header>
+              <span class="impact-label">Production impact</span>
+              <h2>Built, shipped,<br />and measured.</h2>
+              <p>
+                Selected results from enterprise AI, agriculture, and payments.
+              </p>
+              <a href="html/works.html">View experience ↗</a>
             </header>
-            <div class="grad-bg-wrap">
-                <div class="grad-d-bg" data-w-id="67fe3f02-022c-113a-dcd6-6270d4a62771" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/64b927929cae7ff4271d1724_gradient%20bg.json" data-loop="1" data-direction="1"
-                    data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-duration="0"></div>
-                <div class="grad-first-load">
-                    <div class="lottie-container"></div>
-                </div>
+            <div class="impact-results">
+              <div>
+                <strong>2 weeks → 2 days</strong
+                ><span>Customer onboarding · Context Labs</span>
+              </div>
+              <div>
+                <strong>20+ hours / week</strong
+                ><span>Saved across five production AI workflows</span>
+              </div>
+              <div>
+                <strong>40% lower latency</strong
+                ><span>APIs for a platform with 500K+ farmers · Toya</span>
+              </div>
+              <div>
+                <strong>27% faster response</strong
+                ><span>Payment incident response · Infibeam Avenues</span>
+              </div>
             </div>
-            <div class="circle-hover-wrap">
-                <div class="hover-bg">
-                    <div class="hover-bg-col"></div>
-                </div>
+          </div>
+        </article>
+        <article class="impact-sheet impact-education">
+          <img
+            src="assets/reference/banking-gradient-green.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="impact-layout">
+            <header>
+              <span class="impact-label">Education</span>
+              <h2>Computer science.<br />Systems. Research.</h2>
+              <p>
+                Graduate study in algorithms, distributed systems, and
+                statistical machine learning.
+              </p>
+              <a href="html/about.html">More about me ↗</a>
+            </header>
+            <div class="degree-list">
+              <div>
+                <span>2024 — 2026</span>
+                <h3>Arizona State University</h3>
+                <p>M.S. in Computer Science</p>
+                <strong>3.93 / 4.00</strong>
+                <p>Teaching Assistant: Cloud Computing and Math</p>
+              </div>
+              <div>
+                <span>2020 — 2024</span>
+                <h3>Pandit Deendayal Energy University</h3>
+                <p>B.Tech. in Computer Science</p>
+                <strong>9.61 / 10.00</strong>
+              </div>
             </div>
-            <div class="circles-wrap">
-                <div class="circle-l-wrap">
-                    <div class="circle-l">
-                        <div class="circle-bl border-dark"></div>
-                    </div>
-                </div>
-                <div class="circle-m-wrap">
-                    <div class="circle-m">
-                        <div class="circle-bl border-dark"></div>
-                    </div>
-                </div>
-                <div class="circle-s-wrap">
-                    <div class="circle-s">
-                        <div class="circle-bl border-dark css"></div>
-                    </div>
-                </div>
+          </div>
+        </article>
+      </section>
+      <section class="banking-frontier-cta">
+        <div class="banking-frontier-cta-shell">
+          <div class="banking-frontier-cta-card">
+            <img
+              src="assets/reference/contact-hallway.png"
+              alt=""
+              loading="lazy"
+            />
+            <div class="banking-frontier-cta-action">
+              <h2>Let’s talk about<br />what you’re building.</h2>
+              <a href="mailto:hardeep.s.patel@gmail.com">Get in touch</a>
             </div>
-            <div class="w-embed">
-                <style>
-                    @media screen and (min-width:992px) {
-                        .circle-bl.css {
-                            clip-path: polygon(50% 70%, 35% 100%, 0% 100%, 0 65%, 30% 65%, 30% 35%, 0 35%, 0% 0%, 22% 0, 50% 30%, 78% 0, 100% 0%, 100% 35%, 72% 35%, 72% 65%, 100% 65%, 100% 100%, 65% 100%);
-                        }
-                        .hover-bg {
-                            transition-property: left, top;
-                            /* Specify the properties to transition */
-                            transition-duration: 10s, 0.5s;
-                            /* Set different durations for left and top */
-                            transition-timing-function: ease;
-                        }
-                        /*first number — left, second number — top*/
-                    }
-
-                    @media screen and (max-width:991px) {
-                        .circle-bl.css {
-                            clip-path: polygon(50% 70%, 30% 100%, 0% 100%, 0 65%, 30% 65%, 30% 35%, 0 35%, 0% 0%, 22% 0, 50% 30%, 78% 0, 100% 0%, 100% 35%, 72% 35%, 72% 65%, 100% 65%, 100% 100%, 70% 100%);
-                        }
-                        /*first number — left, second number — top*/
-                    }
-                </style>
-            </div>
-            <div class="w-layout-blockcontainer content home-page w-container">
-                <div class="home-vp"><img src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/64de51b8a39c3ff44cd020d0_wave.svg" loading="lazy" alt="" class="home-svg" />
-                    <div class="text-add t-center">I build innovative products that <span class="p-can light custom-f">merge code with strategic vision.</span><br/></div>
-                </div>
-                <div class="home-center">
-                    <h1 class="home-h1"><span class="h1-can custom-f l">Hello, I&#x27;m</span> Hardeep</h1><br> 
-                    <div class="mob-vp">
-                        <div class="text-add t-center">I build innovative products that <span class="p-can light custom-f">merge code with strategic vision.</span><br/></div>
-                    </div>
-                    <div class="home-me-wrap">
-                        <div class="me-imgs"><img src="./images/Hardeep1.jpg" loading="eager" alt="" class="home-me" /></div>
-                    </div>
-                    <h6 class="build-w-love-hide">designed and build with love in Ukraine</h6>
-                    <div class="mob-vp">
-                        <div class="text-add t-center">Software Developer, Product Manager, <br/><span class="p-can light custom-f">Open to work.</span></div>
-                    </div>
-                </div>
-                <div class="home-vp"><img src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/64de51b8a39c3ff44cd020d0_wave.svg" loading="lazy" alt="" class="home-svg" />
-                    <div class="text-add t-center">Software Developer<br/><span class="p-can light custom-f">Open to work. <br><a href="https://drive.google.com/file/d/11Tf1zvoq0BCamzCl2QkeT1yq9oAl4sN5/view?usp=sharing" style="text-decoration: wavy;" target="_blank">My Resume</a></span></div>
-                </div>
-                <h6 class="build-w-love">inspired from <span class="p-can light custom-f">Anton</span></h6>
-            </div>
-            <nav class="links-wrap">
-                <div id="w-node-_59c75e3f-e2d6-726a-d86c-24432ce25e62-a17fdb30" class="dark-links">
-                    <div fs-mirrorclick-element="trigger-102" id="w-node-e55fa055-af9c-27fc-e3b8-f49da17fdb3b-a17fdb30" class="nav-link">
-                        <a href="./html/about.html" class="nav nav-home col-dark-text w-inline-block">
-                            <div class="nav-p">about me</div>
-                            <div class="nav-trig t-l"></div>
-                            <div class="link-hover"></div>
-                        </a>
-                        <link rel="prefetch" href="./html/about.html" />
-                    </div>
-                    <div fs-mirrorclick-element="trigger-102" id="w-node-e55fa055-af9c-27fc-e3b8-f49da17fdb36-a17fdb30" class="nav-link">
-                        <a href="./html/works.html" class="nav nav-home col-dark-text w-inline-block">
-                            <div id="linkTextElement" class="nav-p">experience</div>
-                            <div class="nav-trig t-r"></div>
-                            <div class="link-hover"></div>
-                        </a>
-                        <link rel="prefetch" href="./html/works.html" />
-                    </div>
-                    <div fs-mirrorclick-element="trigger-102" id="w-node-e55fa055-af9c-27fc-e3b8-f49da17fdb40-a17fdb30" class="nav-link">
-                        <a href="./html/expertise.html" class="nav nav-home col-dark-text w-inline-block">
-                            <div class="nav-p">projects</div>
-                            <div class="nav-trig b-l"></div>
-                            <div class="link-hover"></div>
-                        </a>
-                        <link rel="prefetch" href="./html/expertise.html" />
-                    </div>
-                    <div fs-mirrorclick-element="trigger-102" id="w-node-_64c7696c-885c-bbeb-8775-a0fc894020ab-a17fdb30" class="nav-link">
-                        <a href="./html/contacts.html" class="nav nav-home col-dark-text w-inline-block">
-                            <div class="nav-p">contacts</div>
-                            <div class="nav-trig b-r"></div>
-                            <div class="link-hover"></div>
-                        </a>
-                        <link rel="prefetch" href="./contacts.html" />
-                    </div>
-                    
-                </div>
-                <div fs-mirrorclick-element="target-102" class="nav-btn-wrap">
-                    <div data-is-ix2-target="1" class="lottie-btn-icon" data-w-id="120aa64f-3403-0e93-cfc8-f8e653f91f1a" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/650332ac8a219dd083f16b2f_burger-dark%20b.json"
-                        data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.1333333333333333" data-duration="0" data-ix2-initial-state="0"></div>
-                    <div class="nav-btn-text">navigation</div>
-                </div>
-                <div class="nav-bg"></div>
-            </nav>
-        </section>
-    </div>
-    <div fs-cc="banner" class="cookies-banner-wrap">
-        <div class="text-w-flag">
-            <div class="flag-wrap"><img src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/66c4cff9bf2e636406e996ea_ua.svg" loading="lazy" alt="" class="flag" /></div>
-            <div class="cookies-p">Raising funds for technical assistance for friends in the Ukrainian Special Operations Forces. Feel free to support!</div>
+          </div>
         </div>
-        <div class="cookies-interaction-bl">This is some text inside of a div block.</div>
-        <div class="cookies-cta-wrap">
-            <a fs-cc="deny" href="#" class="open-site xs hide w-inline-block">
-                <p class="open-case col-dark-text">Deny</p>
-                <div class="respons-line-wrap">
-                    <div class="responsibility-line first col-dark-bg"></div>
-                    <div class="responsibility-line second col-dark-bg"></div>
-                </div>
-            </a>
-            <a fs-cc="allow" href="/fundraising" class="open-site w-inline-block">
-                <p class="open-case col-dark-text">I want to support</p>
-                <div class="respons-line-wrap">
-                    <div class="responsibility-line first col-dark-bg"></div>
-                    <div class="responsibility-line second col-dark-bg"></div>
-                </div>
-            </a>
-            <div data-w-id="8d313b38-9583-2de9-74ec-4d10007ec145" class="foundrazing-close">×</div>
+      </section>
+    </main>
+    <footer class="site-footer wonderful-style-footer">
+      <div class="wonderful-footer-top">
+        <div class="wonderful-footer-company">
+          <a class="wonderful-footer-brand" href="index.html">Hardeep Patel</a>
+          <p>Software engineer<br />San Francisco, California.</p>
+          <a
+            class="wonderful-footer-contact"
+            href="mailto:hardeep.s.patel@gmail.com"
+            >Get in touch</a
+          >
+          <p class="wonderful-footer-copyright">
+            © <span data-year>2026</span> Hardeep Patel
+          </p>
         </div>
-    </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64b7e915773cb9568b475e5b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.prod.website-files.com/64b7e915773cb9568b475e5b/js/webflow.c380175b.82a726249d840eba.js" type="text/javascript"></script>
-    <!-- Google Tag Manager (noscript) 
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9VGBNBP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-<!-- End Google Tag Manager (noscript) -->
-
-    <script>
-        (function() {
-            // Get the current URL
-            var currentUrl = window.location.href;
-
-            // Check if the URL contains the '/assets/' subfolder
-            if (currentUrl.includes('/assets/')) {
-                // Construct the new URL by replacing the subfolder with the subdomain
-                var newUrl = currentUrl.replace('://www.antonoratom.com/assets/', '://assets.antonoratom.com/');
-
-                // Redirect to the new URL
-                window.location.href = newUrl;
-            }
-        })();
-    </script>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <!--<script asyncsrc="https://qxku2f.csb.app/AtomsHomeland/GlobalLinks.js"></script>-->
-    <script async src="https://cdn.jsdelivr.net/gh/antonoratom/antonoratom@v1/GlobalLinks.js"></script>
-
-
-    <script>
-        if (window.location.pathname !== '/') {
-            window.addEventListener("load", function() {
-                setTimeout(function() {
-                    var elementToHide = document.querySelector(".circle-bl.css");
-                    var elementToShow = document.querySelector(".circle-bl.js");
-                    elementToHide.style.display = "none";
-                    elementToShow.style.display = "block";
-                }, 1000);
-            });
-        }
-    </script>
-
-
-    <style>
-        .fixed {
-            z-index: 10;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .main-container.second {
-            position: fixed;
-            left: 0%;
-            top: 0%;
-            right: 0%;
-            bottom: auto;
-            z-index: 5;
-        }
-
-        .inner-pages.second {
-            position: fixed;
-        }
-
-        html.animating,
-        .animating body {
-            overflow: hidden;
-        }
-
-        .content.inner-pages {
-            z-index: auto;
-        }
-
-        .circle-bl.js.second {
-            width: 45.625em;
-            height: 45.625em;
-        }
-
-        @media screen and (min-width:992px) {
-            .links-wrap {
-                pointer-events: none;
-            }
-            .nav {
-                pointer-events: auto;
-            }
-        }
-
-        @media screen and (max-width:991px) {
-            .links-wrap {
-                pointer-events: none;
-            }
-            .nav-btn-wrap {
-                pointer-events: auto;
-            }
-            .inner-pages-mob-nav {
-                pointer-events: auto;
-            }
-            .nav {
-                pointer-events: auto;
-            }
-        }
-    </style>
-    <style>
-        .nav-btn-wrap {
-            grid-area: 2 / 1 / 3 / 3 !important;
-        }
-    </style>
-
-    <script>
-        var currentDomain = window.location.hostname;
-        var script = document.createElement('script');
-
-        if (currentDomain.indexOf('webflow.io') !== -1) {
-            // For staging domain
-            script.src = 'http://127.0.0.1:8080/antonoratom/stagging.js';
-        } else {
-            // For live domain
-            script.src = '';
-        }
-        document.body.appendChild(script);
-    </script>
-</body>
-
+        <nav aria-label="Portfolio">
+          <h2>Portfolio</h2>
+          <a href="index.html">Overview</a><a href="html/works.html">Work</a
+          ><a href="html/expertise.html">Skills</a>
+        </nav>
+        <nav aria-label="About">
+          <h2>About</h2>
+          <a href="html/about.html">Background</a
+          ><a href="assets/documents/Hardeep-Patel-Resume.pdf">Résumé</a>
+        </nav>
+        <nav aria-label="Social">
+          <h2>Social</h2>
+          <a href="https://linkedin.com/in/hardeep-patel/">LinkedIn</a
+          ><a href="https://github.com/HardeepPatel">GitHub</a
+          ><a href="mailto:hardeep.s.patel@gmail.com">Email</a>
+        </nav>
+      </div>
+      <div class="wonderful-footer-wordmark" aria-hidden="true">
+        Hardeep Patel
+      </div>
+    </footer>
+  </body>
 </html>

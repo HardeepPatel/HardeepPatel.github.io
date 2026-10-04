@@ -1,0 +1,20 @@
+/* Use the supplied banking markup, paper panels, transforms, and phase selectors. */
+body[data-industry] #industry-page .portfolio-projects {background:#fff;padding:0;}
+.portfolio-projects .reference-record-heading {max-width:1440px;margin:auto;}
+.portfolio-projects .consulting-workflow-grid {max-width:1440px;margin:auto;}
+.project-hp-mark {filter:brightness(0);}
+.reference-demo-controls {display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 3px 0;color:#868b83;font-size:11px;}
+.reference-demo-controls>div {display:flex;gap:6px;}
+.reference-demo-controls button {font:inherit;color:#6e7667;border:1px solid #e2e5dd;background:#fff;border-radius:5px;padding:6px 10px;cursor:pointer;}
+.reference-demo-controls button:hover {background:#f2f4ee;color:#293125;}
+.reference-demo-controls button:focus-visible {outline:2px solid #667a52;outline-offset:3px;}
+.portfolio-projects .it-workflow-copy a {display:inline-block;margin-top:20px;font-size:14px;color:#59674c;border-bottom:1px solid #c5cbbd;padding-bottom:5px;}
+.portfolio-benchmark-result {grid-template-columns:1fr!important;}
+.portfolio-benchmark-result small {text-align:center;}
+.portfolio-benchmark-result small b {color:#5c8b69!important;font-size:26px!important;}
+/* Restore the complete Infibeam artwork; cover was cropping away its motion streaks. */
+.portfolio-carousel .progress-slide:nth-child(3) .progress-card-image {object-fit:contain!important;background:#553b30;}
+@media(max-width:760px){
+ .portfolio-projects .consulting-workflow-grid{grid-template-columns:minmax(0,1fr);gap:55px;padding:0 22px 65px;}
+ .portfolio-projects .reference-record-heading{padding:65px 22px 45px;}
+}
